@@ -3,16 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/android studio/app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.102" />
-        <entry key="..\:/android studio/app/src/main/res/drawable/ic_launcher_background.xml" value="0.102" />
-        <entry key="..\:/android studio/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/android studio/app/src/main/res/layout/activity_shopping_car.xml" value="0.29393115942028986" />
-        <entry key="..\:/android studio/app/src/main/res/layout/fragment_burger.xml" value="0.24909420289855072" />
-        <entry key="..\:/android studio/app/src/main/res/layout/fragment_drinks.xml" value="0.24909420289855072" />
-        <entry key="..\:/android studio/app/src/main/res/layout/fragment_omelet.xml" value="0.24909420289855072" />
-        <entry key="..\:/android studio/app/src/main/res/layout/fragment_toast.xml" value="0.24909420289855072" />
-        <entry key="..\:/android studio/app/src/main/res/layout/grid_item.xml" value="0.273828125" />
-        <entry key="..\:/android studio/app/src/main/res/menu/bottom_menu.xml" value="0.1" />
+        <entry key="..\:/android studio version2/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/android studio version2/app/src/main/res/layout/fragment_activity.xml" value="0.36614583333333334" />
+        <entry key="..\:/android studio version2/app/src/main/res/layout/fragment_burger.xml" value="0.36614583333333334" />
+        <entry key="..\:/android studio version2/app/src/main/res/layout/fragment_drinks.xml" value="0.36614583333333334" />
+        <entry key="..\:/android studio version2/app/src/main/res/layout/fragment_omelet.xml" value="0.36614583333333334" />
+        <entry key="..\:/android studio version2/app/src/main/res/layout/fragment_package.xml" value="0.36614583333333334" />
+        <entry key="..\:/android studio version2/app/src/main/res/layout/fragment_toast.xml" value="0.36614583333333334" />
+        <entry key="..\:/android studio version2/app/src/main/res/menu/bottom_menu.xml" value="0.36614583333333334" />
       </map>
     </option>
   </component>

@@ -14,6 +14,78 @@
         android:theme="@style/Theme.OrderinSsystem"
         tools:targetApi="31">
         <activity
+            android:name=".Latte"
+            android:exported="false" />
+        <activity
+            android:name=".BlackCoffee"
+            android:exported="false" />
+        <activity
+            android:name=".MilkTea"
+            android:exported="false" />
+        <activity
+            android:name=".SoyMilk"
+            android:exported="false" />
+        <activity
+            android:name=".GreenTea"
+            android:exported="false" />
+        <activity
+            android:name=".BlackTea"
+            android:exported="false" />
+        <activity
+            android:name=".PorkEggcake"
+            android:exported="false" />
+        <activity
+            android:name=".BeefEggcake"
+            android:exported="false" />
+        <activity
+            android:name=".CheeseEggcake"
+            android:exported="false" />
+        <activity
+            android:name=".PotatocakeEggcake"
+            android:exported="false" />
+        <activity
+            android:name=".CronEggcake"
+            android:exported="false" />
+        <activity
+            android:name=".OringinEggcake"
+            android:exported="false" />
+        <activity
+            android:name=".DoublePorkBurger"
+            android:exported="false" />
+        <activity
+            android:name=".KaraiDrumBurger"
+            android:exported="false" />
+        <activity
+            android:name=".RoastPorkBurger"
+            android:exported="false" />
+        <activity
+            android:name=".BeefBurger"
+            android:exported="false" />
+        <activity
+            android:name=".ChickenChopBurger"
+            android:exported="false" />
+        <activity
+            android:name=".ShrimpBuger"
+            android:exported="false" />
+        <activity
+            android:name=".FishToast"
+            android:exported="false" />
+        <activity
+            android:name=".DrumstickToast"
+            android:exported="false" />
+        <activity
+            android:name=".PorkToast"
+            android:exported="false" />
+        <activity
+            android:name=".BaconToast"
+            android:exported="false" />
+        <activity
+            android:name=".VegetableToast"
+            android:exported="false" />
+        <activity
+            android:name=".EggToast"
+            android:exported="false" />
+        <activity
             android:name=".ShoppingCar"
             android:exported="false" />
         <activity
