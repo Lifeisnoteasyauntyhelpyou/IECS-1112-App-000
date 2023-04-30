@@ -24,7 +24,8 @@
         </activity>
         <activity
             android:name=".SignupActivity"
-            android:exported="false" />
+            android:exported="false">
+        </activity>
         <activity
             android:name=".LoginFirebase"
             android:exported="false" />
@@ -101,11 +102,29 @@
             android:name=".EggToast"
             android:exported="false" />
         <activity
+            android:name=".SetMealA"
+            android:exported="false" />
+        <activity
+            android:name=".SetMealB"
+            android:exported="false" />
+        <activity
+            android:name=".SetMealC"
+            android:exported="false" />
+        <activity
+            android:name=".SetMealD"
+            android:exported="false" />
+        <activity
+            android:name=".SetMealE"
+            android:exported="false" />
+        <activity
+            android:name=".SetMealF"
+            android:exported="false" />
+        <activity
             android:name=".ShoppingCar"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="false"></activity>
     </application>
 
 </manifest>
