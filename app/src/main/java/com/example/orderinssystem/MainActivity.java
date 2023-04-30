@@ -1,15 +1,9 @@
 package com.example.orderinssystem;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.lifecycle.Lifecycle;
-import androidx.viewpager.widget.ViewPager;
-import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,7 +13,6 @@ import android.widget.Toast;
 
 import com.example.orderinssystem.databinding.ActivityMainBinding;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,8 +36,10 @@ public class MainActivity extends AppCompatActivity {
         int[] OmeletImages = {R.drawable.oringin_eggcake, R.drawable.cron_eggcake, R.drawable.potatocake_eggcake, R.drawable.cheese_eggcake, R.drawable.beef_eggcake, R.drawable.pork_eggcake};
         String[] DrinksName = {"朝日淬釀紅茶", "四季春茶", "非基改現磨豆漿", "紅茶歐雷", "精選黑咖啡", "咖啡密斯朵"};
         int[] DrinksImages = {R.drawable.black_tea, R.drawable.green_tea, R.drawable.soy_milk, R.drawable.milk_tea, R.drawable.black_coffee, R.drawable.latte};
-        String[] PackageName = {"1", "1", "1", "1", "1", "1"};
-        int[] PackageImages = {R.drawable.black_tea, R.drawable.green_tea, R.drawable.soy_milk, R.drawable.milk_tea, R.drawable.black_coffee, R.drawable.latte};
+        String[] PackageName = {"古早味炒麵佐蘿蔔糕", "鮮奶山峰厚片拼盤", "綜合炸物佐沙拉", "美式牛肉佐鱈魚海陸拼盤", "厚牛起司堡雞塊拼盤", "雙泥沙拉炒蛋佐蘿蔔糕"};
+        int[] PackageImages = {R.drawable.traditional_fried_noodles_with_carrot_cake, R.drawable.fresh_milk_shanfeng_thick_slice_platter, R.drawable.mixed_fried_foods_with_salad, R.drawable.american_style_beef_with_cod_fish_surf_and_turf_platter, R.drawable.thick_beef_cheeseburger_and_chicken_nugget_platter, R.drawable.double_mud_salad_with_scrambled_eggs_and_carrot_cake};
+
+
         //GridAdapters
         GridAdapter gridAdapter = new GridAdapter(MainActivity.this, ToastName, ToastImages);
         GridAdapter gridAdapterburger = new GridAdapter(MainActivity.this, burgerName, burgerImages);
@@ -235,7 +230,32 @@ public class MainActivity extends AppCompatActivity {
                     binding.gvBurger.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                         @Override
                         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+                            Toast.makeText(MainActivity.this, "click", Toast.LENGTH_LONG).show();
+                            if(position == 0){
+                                Intent intent = new Intent( );
+                                intent.setClass(MainActivity.this, SetMealA.class);
+                                startActivity(intent);
+                            } else if(position == 1){
+                                Intent intent = new Intent( );
+                                intent.setClass(MainActivity.this, SetMealB.class);
+                                startActivity(intent);
+                            } else if(position == 2){
+                                Intent intent = new Intent( );
+                                intent.setClass(MainActivity.this, SetMealC.class);
+                                startActivity(intent);
+                            } else if(position == 3){
+                                Intent intent = new Intent( );
+                                intent.setClass(MainActivity.this, SetMealD.class);
+                                startActivity(intent);
+                            } else if(position == 4){
+                                Intent intent = new Intent( );
+                                intent.setClass(MainActivity.this, SetMealE.class);
+                                startActivity(intent);
+                            } else if(position == 5){
+                                Intent intent = new Intent( );
+                                intent.setClass(MainActivity.this, SetMealF.class);
+                                startActivity(intent);
+                            }
                         }
                     });
                     break;

@@ -16,13 +16,10 @@
         <entry key="..\:/android studio version3/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2735" />
         <entry key="..\:/android studio version3/app/src/main/res/layout/activity_login_firebase.xml" value="0.36614583333333334" />
         <entry key="..\:/android studio version3/app/src/main/res/layout/activity_signup.xml" value="0.36614583333333334" />
-        <entry key="..\:/android studio version4/app/src/main/res/layout/activity_hello.xml" value="0.36614583333333334" />
-        <entry key="..\:/android studio version4/app/src/main/res/layout/activity_login_firebase.xml" value="0.36614583333333334" />
-        <entry key="..\:/android studio version4/app/src/main/res/layout/activity_signup.xml" value="0.36614583333333334" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
