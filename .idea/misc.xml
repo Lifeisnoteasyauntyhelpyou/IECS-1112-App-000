@@ -11,6 +11,11 @@
         <entry key="..\:/android studio version2/app/src/main/res/layout/fragment_package.xml" value="0.36614583333333334" />
         <entry key="..\:/android studio version2/app/src/main/res/layout/fragment_toast.xml" value="0.36614583333333334" />
         <entry key="..\:/android studio version2/app/src/main/res/menu/bottom_menu.xml" value="0.36614583333333334" />
+        <entry key="..\:/android studio version3/app/src/main/res/drawable/custom_eddittext.xml" value="0.2735" />
+        <entry key="..\:/android studio version3/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.2735" />
+        <entry key="..\:/android studio version3/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2735" />
+        <entry key="..\:/android studio version3/app/src/main/res/layout/activity_login_firebase.xml" value="0.36614583333333334" />
+        <entry key="..\:/android studio version3/app/src/main/res/layout/activity_signup.xml" value="0.36614583333333334" />
       </map>
     </option>
   </component>
