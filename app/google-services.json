@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "656125766622",
+    "project_id": "orderinssystem",
+    "storage_bucket": "orderinssystem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:656125766622:android:c7046f89597f00d3674b4f",
+        "android_client_info": {
+          "package_name": "com.example.orderinssystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "656125766622-udit185ioc0qb4pv7156e5clkq91895k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0ecInj8Nq3LwtlxRwCheOdvJ-2Img0CI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "656125766622-udit185ioc0qb4pv7156e5clkq91895k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
