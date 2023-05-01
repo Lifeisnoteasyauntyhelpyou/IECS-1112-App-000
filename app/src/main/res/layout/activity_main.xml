@@ -15,11 +15,13 @@
         android:id="@+id/frame_layout"/>
 
     <GridView
+        android:id="@+id/gv_burger"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/gv_burger"
         android:numColumns="2"
-        android:paddingBottom="50dp"/>
+        android:paddingBottom="50dp"
+        app:layout_anchor="@+id/frame_layout"
+        app:layout_anchorGravity="center" />
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:layout_width="match_parent"

@@ -3,7 +3,6 @@ package com.example.orderinssystem;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-
 public class ShoppingCar extends AppCompatActivity {
 
     @Override
