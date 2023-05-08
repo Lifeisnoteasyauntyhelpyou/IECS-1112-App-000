@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.example.orderinssystem.databinding.ActivityMainBinding;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
     FloatingActionButton btn_shoppingButton;
+    ImageButton ib_activity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -271,6 +273,16 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, ShoppingCar.class);
                 startActivity(intent);
+            }
+        });
+
+        //activity
+        ib_activity = findViewById(R.id.ib_activity);
+        ib_activity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (MainActivity.this,ActivityActivity.class);
+                startActivity (intent);
             }
         });
     }
