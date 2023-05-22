@@ -57,7 +57,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="216dp"
+        android:layout_marginTop="204dp"
         android:text="份數"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,7 +84,7 @@
         android:padding="0dp"
         android:text="+"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toEndOf="@+id/tv_number"
         app:layout_constraintTop_toBottomOf="@+id/checkBox1" />
 
@@ -92,11 +92,11 @@
         android:id="@+id/tv_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="196dp"
+        android:layout_marginTop="204dp"
         android:text="1"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/checkBox1" />
 
@@ -109,7 +109,7 @@
         android:padding="0dp"
         android:text="-"
         app:layout_constraintEnd_toStartOf="@+id/tv_number"
-        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintHorizontal_bias="0.849"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/checkBox1" />
 
