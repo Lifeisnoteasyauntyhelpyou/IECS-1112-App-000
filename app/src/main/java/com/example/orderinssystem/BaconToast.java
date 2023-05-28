@@ -69,7 +69,7 @@ public class BaconToast extends AppCompatActivity {
     cbCut.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        if (cbMayonnaise.isChecked()){
+        if (cbCut.isChecked()){
           cut = true;
         } else {
           cut = false;
