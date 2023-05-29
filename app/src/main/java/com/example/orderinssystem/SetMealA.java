@@ -39,6 +39,9 @@ public class SetMealA extends AppCompatActivity {
                         number++;
                         break;
                     case R.id.bt_minus:
+                        if(number == 1) {
+                            break;
+                        }
                         number--;
                         break;
                 }
@@ -62,7 +65,7 @@ public class SetMealA extends AppCompatActivity {
             }
         });
 
-        cbKetchup = findViewById(R.id.checkBox1);
+        cbKetchup = findViewById(R.id.cb_ketchup);
         cbKetchup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
