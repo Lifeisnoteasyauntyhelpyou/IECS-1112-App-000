@@ -43,7 +43,8 @@
                 android:hint="Email"
                 android:drawableLeft="@drawable/ic_baseline_person_24"
                 android:drawablePadding="8dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:singleLine="true"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -55,7 +56,9 @@
                 android:hint="Password"
                 android:drawableLeft="@drawable/ic_baseline_lock_24"
                 android:drawablePadding="8dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:password="true"
+                android:singleLine="true"/>
 
             <Button
                 android:layout_width="match_parent"

@@ -2,7 +2,6 @@ package com.example.orderinssystem;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.accessibility.AccessibilityViewCommand;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -47,7 +46,8 @@ public class LoginFirebase extends AppCompatActivity {
                         auth.signInWithEmailAndPassword(email, password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                             @Override
                             public void onSuccess(AuthResult authResult) {
-                                Toast.makeText(LoginFirebase.this, "Login Successful", Toast.LENGTH_LONG).show();
+                                String[] sa = email.split("@");
+                                Toast.makeText(LoginFirebase.this, sa[0].trim() + " Login Successful", Toast.LENGTH_LONG).show();
                                 startActivity(new Intent(LoginFirebase.this, MainActivity.class));
                             }
                         }).addOnFailureListener(new OnFailureListener() {
