@@ -7,9 +7,12 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -27,12 +30,15 @@ public class ShoppingCar extends AppCompatActivity {
     List<DataClass> dataList;
     DatabaseReference databaseReference;
     ValueEventListener eventListener;
-    Button btn_send;
+    private Button btn_send;
+    private TextView tv_all_money;
+    private ArrayList<String> money = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shopping_car);
+        tv_all_money = findViewById(R.id.tv_all_money);
 
         recyclerView = findViewById(R.id.recyclerView_shoppingCar);
 
@@ -60,9 +66,17 @@ public class ShoppingCar extends AppCompatActivity {
                 for(DataSnapshot itemSnapshot: snapshot.getChildren()){
                     DataClass dataClass = itemSnapshot.getValue(DataClass.class);
                     dataList.add(dataClass);
+
+                    money.add(dataClass.getDataMoney());
                 }
                 adapter.notifyDataSetChanged();
                 dialog.dismiss();
+                int all_money = 0;
+                for(int i = 0;i<money.size();i++){
+                    all_money += Integer.parseInt(money.get(i));
+                }
+                tv_all_money.setText("$ :" + String.valueOf(all_money));
+
             }
 
             @Override
@@ -70,6 +84,7 @@ public class ShoppingCar extends AppCompatActivity {
                 dialog.dismiss();
             }
         });
+
         btn_send = findViewById(R.id.btn_shopping_send);
         btn_send.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,7 +104,12 @@ public class ShoppingCar extends AppCompatActivity {
 
                     }
                 });
+                tv_all_money.setText("$ :0");
+                Intent intent = new Intent();
+                intent.setClass(ShoppingCar.this, MainActivity.class);
+                startActivity(intent);
             }
         });
+
     }
 }

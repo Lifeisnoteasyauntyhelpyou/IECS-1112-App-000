@@ -13,14 +13,26 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView_shoppingCar"
-            android:layout_width="395dp"
-            android:layout_height="632dp"
+            android:layout_width="399dp"
+            android:layout_height="628dp"
             android:layout_marginBottom="32dp"
             android:scrollbars="vertical"
             app:layout_constraintBottom_toTopOf="@+id/btn_shopping_send"
             tools:layout_editor_absoluteX="3dp">
 
         </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/tv_all_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="64dp"
+            android:text="$ :0"
+            android:textSize="20sp"
+            android:textColor="@color/lavender"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <Button
             android:id="@+id/btn_shopping_send"
